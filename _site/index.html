@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    <meta charset="UTF-8">
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Simple Alpheios Enabled Site Template | Alpheios Simple Site</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Simple Alpheios Enabled Site Template" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Template for A Simple Website with Alpheios Embedded" />
+<meta property="og:description" content="A Template for A Simple Website with Alpheios Embedded" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Alpheios Simple Site" />
+<script type="application/ld+json">
+{"name":"Alpheios Simple Site","description":"A Template for A Simple Website with Alpheios Embedded","@type":"WebSite","url":"http://localhost:4000/","headline":"Simple Alpheios Enabled Site Template","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#BCE5F0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Simple Alpheios Enabled Site Template</title>
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/style/style-components.css"/>
+
+
+  </head>
+  <body>
+   <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+      import ("https://cdn.jsdelivr.net/npm/alpheios-embedded@latest/dist/alpheios-embedded.min.js").then(embedLib => {
+
+        window.AlpheiosEmbed.importDependencies({mode: 'cdn'}).then(Embedded => {
+          new Embedded(
+            { clientId: "http://localhost:4000",
+              authEnv: null
+            }).activate();
+        }).catch(e => {
+          console.error(`Import Alpheios Embedded Library dependencies failed: ${e}`)
+        })
+
+      }).catch(e => {
+        console.error(`Import of Alpheios Embedded Library failed: ${e}`)
+      })
+    });
+
+   </script>
+
+    <header class="page-header" role="banner" data-alpheios-ignore="all">
+      <h1>Simple Alpheios Enabled Site Template</h1>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p>This is a template that you can use to create a simple GitHub Pages
+website enhanced with embedded <a href="https://alpheios.net">Alpheios Reading Tools</a>.</p>
+
+<p>Sections of Latin, Greek, Arabic or Persian text can be automatically
+  enabled for double-click (Desktop)/long tap (Mobile) access from words to the Alpheios Reading Aids.</p>
+
+<p>Double-click (if on a Desktop) or tap (if on a Mobile device) on the Latin
+and Greek words in the following sections to see how it works. Then view the
+<b>Example HTML</b> to see how to mark up the text.
+Follow the instructions at <a href="getting-started.html">Getting Started</a> to
+set up your own site.
+</p>
+
+<hr>
+
+<blockquote>
+<p class="alpheios-enabled" lang="lat">
+Arma virumque canō, Trōiae quī prīmus ab ōrīs<br>
+Ītaliam, fātō profugus, Lāvīniaque vēnit<br>
+lītora, multum ille et terrīs iactātus et altō<br>
+vī superum saevae memorem Iūnōnis ob īram;<br>
+</p>
+</blockquote>
+
+<details>
+   <summary>Example HTML</summary>
+   <textarea rows="7" cols="75">
+<p class="alpheios-enabled" lang="lat">
+Arma virumque canō, Trōiae quī prīmus ab ōrīs<br>
+Ītaliam, fātō profugus, Lāvīniaque vēnit<br>
+lītora, multum ille et terrīs iactātus et altō<br>
+vī superum saevae memorem Iūnōnis ob īram<br>
+</p>
+   </textarea>
+</details>
+
+<blockquote>
+<p class="alpheios-enabled" lang="grc">
+ἄνδρα μοι ἔννεπε , μοῦσα , πολύτροπον , ὃς μάλα πολλὰ<br>
+πλάγχθη , ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν:<br>
+πολλῶν δ᾽ ἀνθρώπων ἴδεν ἄστεα καὶ νόον ἔγνω,<br>
+πολλὰ δ᾽ ὅ γ᾽ ἐν πόντῳ πάθεν ἄλγεα ὃν κατὰ θυμόν,<br>
+ἀρνύμενος ἥν τε ψυχὴν καὶ νόστον ἑταίρων.<br>
+</p>
+</blockquote>
+
+<details>
+   <summary>Example HTML</summary>
+   <textarea rows="8" cols="75">
+<p class="alpheios-enabled" lang="grc">
+ἄνδρα μοι ἔννεπε , μοῦσα , πολύτροπον , ὃς μάλα πολλὰ<br>
+πλάγχθη , ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν:<br>
+πολλῶν δ᾽ ἀνθρώπων ἴδεν ἄστεα καὶ νόον ἔγνω,<br>
+πολλὰ δ᾽ ὅ γ᾽ ἐν πόντῳ πάθεν ἄλγεα ὃν κατὰ θυμόν,<br>
+ἀρνύμενος ἥν τε ψυχὴν καὶ νόστον ἑταίρων.<br>
+</p>
+    </textarea>
+</details>
+
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+
+    <meta charset="UTF-8">
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#BCE5F0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alpheios-components@latest/dist/style/style-components.css"/>
+
+
+  </head>
+  <body>
+   <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function(event) {
+      import ("{{'https://cdn.jsdelivr.net/npm/alpheios-embedded@latest/dist/alpheios-embedded.min.js' | relative_url}}").then(embedLib => {
+
+        window.AlpheiosEmbed.importDependencies({mode: 'cdn'}).then(Embedded => {
+          new Embedded(
+            { clientId: "{{ site.url }}", 
+              authEnv: null 
+            }).activate();
+        }).catch(e => {
+          console.error(`Import Alpheios Embedded Library dependencies failed: ${e}`)
+        })
+
+      }).catch(e => {
+        console.error(`Import of Alpheios Embedded Library failed: ${e}`)
+      })
+    });
+
+   </script>
+
+    <header class="page-header" role="banner" data-alpheios-ignore="all">
+      <h1>{{ page.title | default: site.title }}</h1>
+    </header>
+
+    <main id="content" class="main-content alpheios-enabled" role="main" lang="grc">
+      {{ content }}
+    </main>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    <meta charset="UTF-8">
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Getting Started | Alpheios Simple Site</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Getting Started" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A Template for A Simple Website with Alpheios Embedded" />
+<meta property="og:description" content="A Template for A Simple Website with Alpheios Embedded" />
+<link rel="canonical" href="http://localhost:4000/getting-started.html" />
+<meta property="og:url" content="http://localhost:4000/getting-started.html" />
+<meta property="og:site_name" content="Alpheios Simple Site" />
+<script type="application/ld+json">
+{"description":"A Template for A Simple Website with Alpheios Embedded","@type":"WebPage","url":"http://localhost:4000/getting-started.html","headline":"Getting Started","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#BCE5F0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Getting Started</title>
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <h1>Getting Started</h1>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h2>Overview</h2>
+<p>These instructions walk you through how to use the Alpheios Simple Site
+  template and GitHub to create your own Alpheios-Enabled website.
+</p>
+<h2>Minimum Prerequisities</h2>
+<ol>
+  <li>An account on <a href="https://github.com" target="_blank">GitHub</a></li>
+  <li>Very basic HTML skills</li>
+</ol>
+<h2>Technologies Used</h2>
+<p>Following the instructions below will enable you to create a very simple
+  website.  However, much more is possible than is described here if you
+  delve into the technologies used to create the site. You can also
+  create menus to navigate your site, add images and multimedia,
+  use custom styles, link syntax trees in Alpheios and more.
+</p>
+  <ul>
+    <li>The repository is hosted by <a href="https://docs.github.com/en/github/getting-started-with-github"
+      target="_blank">GitHub</a>. Knowing how to use GitHub is helpful for troublshooting
+    problems with adding and editing files.</li>
+    <li>The website is served by <a href="https://docs.github.com/en/github/working-with-github-pages"
+    target="_blank">GitHub Pages</a>. Knowing more about this can help if you run into problems
+    with the way the site functions or if it doesn't update as you expected.</li>
+    <li>The website is built using <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.
+    This is important if you want to add navigation and other typical website features.</li>
+    <li>The website's css theme is <a href="https://github.com/pages-themes/cayman" target="_blank">Cayman</a>.
+    This is important if you want to change the look and feel of the site.</li>
+    <li>The Alpheios functionality is provided by the
+      <a href="https://github.com/alpheios-project/embed-lib#readme" target="_blank">Alpheios Embedded Library</a>.
+      You can explore additional Alpheios customization and feature options.</li>
+  </ul>
+<h2>Instructions</h2>
+<ol>
+  <li>Create your site
+    <ol>
+      <li>Login in to <a href="https://github.com" target="_blank">GitHub</a></li>
+      <li>Go to this repository <a href="https://github.com/alpheios-project/simple-site"
+        target="_blank">https://github.com/alpheios-project/simple-site</a></li>
+      <li>Click the Green <code style="background-color:green; color: white;">Use This Template</code> button.</li>
+      <li>Enter a name for your site's repository.</li>
+      <li>Add a description of your planned site contents.</li>
+      <li>Choose <code>Public</code> (if you choose <code>Private</code> you will
+        not be able to publish it as a website)</li>
+      <li>Click the green <code style="background-color:green; color:white;">Create repository from Template</code> button.</li>
+      <li>You will be on your new repository page in GitHub.</li>
+      <li>Click the <code>Settings</code> tab.</li>
+      <li>Scroll down to the <code>GitHub Pages</code> section of the page.</li>
+      <li>Select <code>master branch</code> from the <code>Source</code> dropdown.</li>
+      <li>Click the <code>Code</code> tab.</li>
+      <li>Click on the file named <code>_config.yml</code>.</li>
+      <li>Click the <code>Edit</code> icon (it is a picture of pencil).</li>
+      <li>Replace the text <em>Alpheios Simple Site</em> with the title of
+        your site.</li>
+      <li>Replace the text <em>A Template for A Simple Website with Alpheios Embedded</em>
+        with a description of your site.</li>
+      <li>Scroll to the bottom of the page to <code>Commit Changes</code>
+          and enter a message to describe your change to this file.
+         (e.g. something like "Updated site metadata".)
+      </li>
+      <li>Make sure the option <code>Commit directly to the master
+          branch</code> is selected
+      </li>
+      <li>At this point, your GitHub web page should be published and updated at
+        https://(youraccountname).github.io/(yoursitename). For example, if your
+        account name is "janedoe" and your site name is "my-latin-site" the site
+        will be published at https://janedoe.github.io/my-latin-site . At this point
+        it will contain the same contents as the template.
+      </li>
+    </ol>
+  </li>
+  <li>Edit your Site's home Page
+    <ol>
+      <li>Click the <code>Code</code> tab.</li>
+      <li>Click on the file named <code>index.html</code>. This file contains
+        the main page of the site. You will replace the default contents with your own.</li>
+      <li>Click on the Edit icon</li>
+      <li>Replace the text "Simple Alpheios Enabled Site Template" with whatever you want the
+        title of your main page to be.
+      </li>
+      <li>Delete everything from line 5 (the line after second <code>---</code>) to the end.</li>
+      <li>Add some text to your page. (See below for
+        instructions on how to enable specific sections of text for Alpheios.)</li>
+      <li>Scroll to the bottom of the page to <code>Commit Changes</code>
+          and enter a message to describe your change to this file.
+         (e.g. something like "Updated home page")
+      </li>
+      <li>Make sure the option <code>Commit directly to the master
+          branch</code> is selected
+      </li>
+      <li>Your GitHub web page should be published and updated</li>
+    </ol>
+  </li>
+  <li>Enable Text For Alpheios
+    <ol>
+      <li><p>Enable individual text sections on a page for Alpheios by specifying a
+       <code>class</code> attribute on the surrounding HTML tag:
+       <code>class="alpheios-enabled"</code> as well as a
+       <code>lang</code> attribute set to the <b>3 character language code</b> for your
+       text (<code>lang="lat"</code> for Latin, <code>lang="grc"</code> for Greek,
+       <code>lang="ara"</code>> for Arabic and <code>lang="per"</code> for Persian.)</p>
+       <textarea rows="7" cols="75">
+<p class="alpheios-enabled" lang="lat">
+Arma virumque canō, Trōiae quī prīmus ab ōrīs<br>
+Ītaliam, fātō profugus, Lāvīniaque vēnit<br>
+lītora, multum ille et terrīs iactātus et altō<br>
+vī superum saevae memorem Iūnōnis ob īram<br>
+</p>
+      </textarea>
+      <textarea rows="8" cols="75">
+<p class="alpheios-enabled" lang="grc">
+ἄνδρα μοι ἔννεπε , μοῦσα , πολύτροπον , ὃς μάλα πολλὰ<br>
+πλάγχθη , ἐπεὶ Τροίης ἱερὸν πτολίεθρον ἔπερσεν:<br>
+πολλῶν δ᾽ ἀνθρώπων ἴδεν ἄστεα καὶ νόον ἔγνω,<br>
+πολλὰ δ᾽ ὅ γ᾽ ἐν πόντῳ πάθεν ἄλγεα ὃν κατὰ θυμόν,<br>
+ἀρνύμενος ἥν τε ψυχὴν καὶ νόστον ἑταίρων.<br>
+</p>
+      </textarea>
+
+      <li><p>Enable an <b>entire page text for a single language</b> by
+       specifying use of the corresponding language template in the metadata
+        at the top of the file.</p>
+        <p>Use the files
+        <code>latin.html</code>, <code>greek.html</code>,
+        <code>arabic.html</code> or <code>persian.html</code>
+        in this directory or see the <em>Example Latin Page File Contents</em>
+        below:</p>
+       <p>
+         <textarea rows="11" cols="75">
+---
+layout: latin
+title: A Page With Only Latin Text
+---
+<p>
+Arma virumque canō, Trōiae quī prīmus ab ōrīs<br>
+Ītaliam, fātō profugus, Lāvīniaque vēnit<br>
+lītora, multum ille et terrīs iactātus et altō<br>
+vī superum saevae memorem Iūnōnis ob īram<br>
+</p>
+          </textarea>
+        </p>
+      </li>
+    </ol>
+  </li>
+
+  <li>
+    <p>Update the descriptive metadata for your page.</p>
+    <p>Metadata fields are set at the top of the page in the metadata
+      section which is preceded and followed by lines containing only
+      <code>---</code>.</p>
+    <p> At a minimum you must specify <code>layout</code> and <code>title</code>
+    for each page. <code>layout</code> should be set to <code>default</code> if your
+    page has text in multiple languages (such as instructional text in English
+    and reading text in Latin). Otherwise set it to the language of your text
+    (<code>latin</code>, <code>greek</code>, <code>arabic</code> or
+    <code>persian</code>) as described above.<code>title</code> should be set to
+    whatever you want your page title to be. See the <em>Example Mixed Text
+    Page File Contents</em> below:</p>
+
+    <p>
+     <textarea rows="11" cols="75">
+---
+layout: default
+title: A Page With both English and Latin Text
+---
+<p>This is some initial instructional text that is not enabled for
+Alpheios lookups. Following it is a section of Latin text which
+is enabled for Alpheios lookups.</p>
+
+<p class="alpheios-enabled" lang="lat">
+Arma virumque canō, Trōiae quī prīmus ab ōrīs<br>
+Ītaliam, fātō profugus, Lāvīniaque vēnit<br>
+lītora, multum ille et terrīs iactātus et altō<br>
+vī superum saevae memorem Iūnōnis ob īram<br>
+</p>
+      </textarea>
+  </p>
+
+  </li>
+  <li><p>Add new files to your site by using the "Add File" button when on the
+    <code>code</code> tab. You can create a new file or upload a file from
+    your local file system.</p>
+    <p>Make sure to use only HTML fragments for your files. The page contents
+    following the metadata section should be marked up as
+    HTML fragments. They will be inserted automatically in the <code>body</code>
+    element of the page. <b>Do not use full HTML files.</b></p>
+  </li>
+</ol>
+
+
+
+
+
+    </main>
+  </body>
+</html>
